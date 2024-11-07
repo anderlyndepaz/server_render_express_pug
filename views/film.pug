@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Movie Details
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    if error
+      h1= error
+    else
+      h1= title
+      h3 Directed by #{autor}
+      p Description: #{description}
+      img(src=image, alt=title)

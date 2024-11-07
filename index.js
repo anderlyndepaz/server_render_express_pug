@@ -23,7 +23,9 @@ app.use('/film', filmRoutes);
 // app.get('/', (req, res) => {
 //     res.redirect('/home');
 //   });
-
+app.get('/', (req, res) => {
+    res.redirect('/home');
+  });
 // const url = `http://www.omdbapi.com/?apikey=${process.env.APIKEY}&t=${title}`
 
 app.listen(port, () => console.log(`Servidor iniciado en el puerto ${port}`));
